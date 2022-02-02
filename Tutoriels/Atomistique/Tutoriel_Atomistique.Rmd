@@ -1,22 +1,35 @@
 ---
-title: "Tutoriel : Les Atomes"
-subtitle: "Niveau : Seconde"
+title: "Tutoriel Atomistique"
+subtitle: "Niveau Seconde"
 author: "Mallory Dazza"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     css: [foo.css, foo-fonts.css]
     lib_dir: libs
+    seal: false # Title slide different from YAML
     nature:
+      ratio: 4:3
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
 ---
+class: title-slide
+
 ```{r xaringan-tile-view, echo=FALSE}
 xaringanExtra::use_tile_view()
 xaringanExtra::use_panelset()
 xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "10px")
 ```
+
+# Tutoriel : Les Atomes
+
+## Niveau : Seconde
+
+### Ecrit par Mallory Dazza
+### Février 2022
+
+---
 
 ## La composition d'un atome
 
@@ -49,9 +62,13 @@ class: inverse
 Le text test isci 
 
 ---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/160316-031_Bridge_near_Tatopani.jpg/1200px-160316-031_Bridge_near_Tatopani.jpg)
+background-size: 100px
+background-position: 95% 2.5%
+
 ## Titre numero 2
 
-### Titre 3 
+### Titre 3
 
 Le text test isci 
 ---
