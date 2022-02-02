@@ -17,7 +17,6 @@ output:
 class: title-slide
 
 ```{r xaringan-tile-view, echo=FALSE}
-xaringanExtra::use_share_again()
 xaringanExtra::use_tile_view()
 xaringanExtra::use_panelset()
 xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "10px")
