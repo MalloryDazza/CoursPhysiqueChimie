@@ -37,6 +37,8 @@ xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "1
 
 2. Ceci n'est pas un paragraphe
 
+Une modification 
+
 ---
 class: inverse
 
