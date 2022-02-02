@@ -35,7 +35,7 @@ xaringanExtra::use_progress_bar(color = "#0051BA", location = "top", height = "1
 
 1. Le texte du paragraphe _italique_ __bold__  ___italique et bold___ *italique* **bold** ***italique bold***
 
-2. Le texte d'un autre paragraphe
+2. Ceci n'est pas un paragraphe
 
 ---
 class: inverse
