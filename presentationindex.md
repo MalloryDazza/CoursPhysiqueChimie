@@ -1,7 +1,7 @@
 
 ## Tutoriels de Physique-Chimie
 
-### Link
+### Comment faire ? 
 
 Note the relative link starting with a slash before the html file.
 
