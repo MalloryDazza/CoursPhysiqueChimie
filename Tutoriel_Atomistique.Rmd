@@ -29,7 +29,9 @@ xaringanExtra::use_progress_bar(color = "#365f49ff", location = "top", height = 
 ### Ecrit par Mallory Dazza
 ### Février 2022
 
-.pull-right[ *Avancez et revenez en arrière dans la présentation avec les flèches droite et gauche du clavier* ]
+.pull-right[ 
+**C'est vous qui gérez le rythme :**
+*Avancez et revenez en arrière avec les flèches droite et gauche du clavier* ]
 
 ---
 background-image: url(img/Atomistique/Elmt_chimique-1.png)
