@@ -1,0 +1,87 @@
+---
+title: "Xaringan Tutoriel"
+subtitle: "Niveau "
+author: "Mallory Dazza"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    
+    css: [foo.css, foo-fonts.css]
+    lib_dir: libs
+    seal: false # Title slide different from YAML
+    includes:
+      after_body: extras.html
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: title-slide
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_progress_bar(color = "#365f49ff", location = "top", height = "6px")
+```
+
+# Tutoriel Xaringan 
+
+.pull-right[
+**C'est vous qui gérez le rythme :**
+- *Avancez et revenez en arrière avec les flèches droite et gauche du clavier* 
+
+- *Répondez aux questions en cliquant sur la bonne réponse*]
+
+### Ecrit par Mallory Dazza
+### Février 2022
+
+---
+name: Question1
+
+## Quel est le nombre de protons de l'atome de carbone $_{~6}^{12}C$ ? 
+
+.pull-left[
+
+.bad-answer[
+  *A* Il n'y a aucun proton
+]
+<br>
+.good-answer[
+  *B* Il a 6 protons
+]
+<br>
+.bad-answer[
+  *C* Il a 12 protons 
+]
+<br>
+.bad-answer[
+  *D* Il a 18 protons 
+]
+
+]
+
+.pull-rigth[
+
+Un peu de texte ici pour présenter la question 
+
+.comment[
+  Voici un commentaire
+]
+
+]
+
+---
+name: Question2
+
+## Question 2 
+
+.good-answer[
+  *Réponse 1* réponse 1 de la question 2
+]
+
+.displaynone[none]
+
+.bad-answer[
+  *Réponse 2* La réponse 2 de la quesiton 2
+]
