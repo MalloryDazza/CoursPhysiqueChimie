@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var x = slideQuestion.querySelector('.comment');
   x.style.display = "none";
   
-  ['good-', 'bad-'].map(function(selector){
+  var answers = slideQuestion.querySelectorAll('.bad-answer');
+  answers.appendNodes(slideQuestion.querySelector('.good-answer'));
+  
+  answers.map(function(selector){
     slideQuestion.querySelector('.' + selector + 'answer').
       addEventListener('click', function () {
         
@@ -58,10 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
 .good-clicked {
   color: #365f49;
   /*border: 2px solid #365f49;*/
-}
-
-.comment {
-  display: none;
 }
 
 .good-answer {

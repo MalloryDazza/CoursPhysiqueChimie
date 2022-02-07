@@ -4,7 +4,7 @@
     <title>Xaringan Tutoriel</title>
     <meta charset="utf-8" />
     <meta name="author" content="Mallory Dazza" />
-    <meta name="date" content="2022-02-05" />
+    <meta name="date" content="2022-02-06" />
     <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view-0.2.6/tile-view.js"></script>
@@ -200,7 +200,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var x = slideQuestion.querySelector('.comment');
   x.style.display = "none";
   
-  ['good-', 'bad-'].map(function(selector){
+  var answers = slideQuestion.querySelectorAll('.bad-answer');
+  answers.appendNodes(slideQuestion.querySelector('.good-answer'));
+  
+  answers.map(function(selector){
     slideQuestion.querySelector('.' + selector + 'answer').
       addEventListener('click', function () {
         
@@ -222,10 +225,10 @@ document.addEventListener('DOMContentLoaded', function() {
         /* Remove hover background */
         slideQuestion.querySelector('.good-answer:hover').
           classList.toggle('no-hover');
-        alert(slideQuestion.querySelectorAll('.bad-answer:hover'))/*.
+        slideQuestion.querySelectorAll('.bad-answer:hover').
           forEach(function(answ) {
             answ.classList.toggle('no-hover');
-          });*/
+          });
           
         /*slideQuestion.querySelector('.comment').classList.
           toggle('comment-on');
@@ -251,10 +254,6 @@ document.addEventListener('DOMContentLoaded', function() {
 .good-clicked {
   color: #365f49;
   /*border: 2px solid #365f49;*/
-}
-
-.comment {
-  display: none;
 }
 
 .good-answer {
