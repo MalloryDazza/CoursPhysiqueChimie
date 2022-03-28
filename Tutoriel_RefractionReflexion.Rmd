@@ -1,0 +1,170 @@
+---
+title: "Tutoriel Atomistique"
+subtitle: "Niveau Seconde"
+author: "Mallory Dazza"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: [foo.css, foo-fonts.css]
+    lib_dir: libs
+    seal: false # Title slide different from YAML
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: title-slide
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
+xaringanExtra::use_progress_bar(color = "#365f49ff", location = "top", height = "6px")
+```
+
+# Cours Graphique - Chapitre 6 Réfraction et Réflexion de la lumière
+
+## Niveau : Seconde
+
+### Ecrit par Mallory Dazza
+### Mars 2022
+
+.pull-right[ 
+**C'est vous qui gérez le rythme :**
+*Avancez et revenez en arrière avec les flèches droite et gauche du clavier* ]
+
+---
+background-image: url(img/RefractionReflexion/Presentation-1.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-2.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-3.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-4.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-5.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-6.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-7.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-8.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Presentation-9.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-1.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-2.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-3.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-4.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-5.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-6.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-7.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-8.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Reflexion-9.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-1.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-2.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-3.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-4.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-5.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-6.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-7.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-8.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-9.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-10.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-11.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-12.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-13.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-14.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-15.png)
+background-size: 100%
+
+---
+background-image: url(img/RefractionReflexion/Refraction-16.png)
+background-size: 100%

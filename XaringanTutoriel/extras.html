@@ -5,48 +5,60 @@ document.addEventListener('DOMContentLoaded', function() {
   /* click on answer boxes */
   const slideQuestion = document.getElementById('slide-Question1');
   var x = slideQuestion.querySelector('.comment');
+  
   x.style.display = "none";
   
-  var answers = slideQuestion.querySelectorAll('.bad-answer');
-  answers.appendNodes(slideQuestion.querySelector('.good-answer'));
+  var Answers  = slideQuestion.querySelectorAll('.bad-answer, .good-answer');
   
-  answers.map(function(selector){
-    slideQuestion.querySelector('.' + selector + 'answer').
-      addEventListener('click', function () {
-        
-        /*Show good an bad answer*/
-        slideQuestion.querySelectorAll('.bad-answer').
-          forEach(function(answ) {
-            answ.classList.toggle('bad-clicked');
-          });
-        slideQuestion.querySelector('.good-answer').
-          classList.toggle('good-clicked');
-        
-        /* Show question comments */
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-        
-        /* Remove hover background */
-        slideQuestion.querySelector('.good-answer:hover').
-          classList.toggle('no-hover');
-        slideQuestion.querySelectorAll('.bad-answer:hover').
-          forEach(function(answ) {
-            answ.classList.toggle('no-hover');
-          });
-          
-        /*slideQuestion.querySelector('.comment').classList.
-          toggle('comment-on');
-        slideQuestion.querySelector('.bad-answer').
-          classList.toggle('bad-clicked');
-        slideQuestion.querySelectorAll('.bad-answer').
-          forEach(function(answ) {
-            answ.classList.toggle('bad-clicked');
-          })*/
-      })
-    })
+  /*bad answers*/
+  Answers.map(function(answer){
+    
+    answer.addEventListener('click', function () {
+      
+      /*Show good an bad answer*/
+      slideQuestion.querySelectorAll('.bad-answer').
+        forEach(function(answ) {
+          answ.classList.toggle('bad-clicked');
+        });
+      slideQuestion.querySelector('.good-answer').
+        classList.toggle('good-clicked');
+      
+      /* Show question comments */
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+      
+      slideQuestion.querySelector('.good-answer').
+        addEventListener('mouseenter', function () {
+          slideQuestion.querySelector('.good-answer')
+            .style.backgroundColor = '#121822'
+        })
+      slideQuestion.querySelector('.good-answer').
+        addEventListener('mouseleave', function () {
+          slideQuestion.querySelector('.good-answer')
+            .style.backgroundColor = '#090C11'
+        })
+
+      /* Remove hover background */
+      slideQuestion.querySelectorAll('.bad-answer:hover').
+        forEach(function(badAnsw) {
+          alert(badAnsw)
+          badAnsw.classList.toggle('no-hover');
+        });
+      
+      /*slideQuestion.querySelector('.comment').classList.
+        toggle('comment-on');
+      slideQuestion.querySelector('.bad-answer').
+        classList.toggle('bad-clicked');
+      slideQuestion.querySelectorAll('.bad-answer').
+        forEach(function(answ) {
+          answ.classList.toggle('bad-clicked');
+        })*/
+      });
+    });
+  
   })
 </script>
 
