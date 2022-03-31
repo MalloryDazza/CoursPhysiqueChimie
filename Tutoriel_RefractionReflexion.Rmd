@@ -1,5 +1,5 @@
 ---
-title: "Tutoriel Atomistique"
+title: "Tutoriel Réfraction-Réflexion"
 subtitle: "Niveau Seconde"
 author: "Mallory Dazza"
 date: "`r Sys.Date()`"
