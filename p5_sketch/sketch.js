@@ -14,7 +14,7 @@ let angle_i = 45;
 let angle_r = 45;
 
 function setup() {
-  createCanvas(1264, 711);
+  createCanvas(730, 410);
   // slider has a range between 0 and 255 with a starting value of 127
   slider = createSlider(0, 90, 45);
   slider.position(10, 10);
