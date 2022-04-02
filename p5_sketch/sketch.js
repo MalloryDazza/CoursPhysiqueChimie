@@ -33,7 +33,6 @@ function draw() {
   text(mouseY, 50, 150);
   text(mouseX, 50, 100);
   
-  
   for (let i = 0; i < 20; i++) {
   stroke(250);
   line(width/2, 2*i * (height/40), width/2, (2*i+1) * (height/40));
