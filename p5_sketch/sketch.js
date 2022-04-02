@@ -14,7 +14,8 @@ let angle_i = 45;
 let angle_r = 45;
 
 function setup() {
-  createCanvas(751, 422);
+  createCanvas(document.documentElement.clientWidth,document.documentElement.clientHeight)
+  //createCanvas(751, 422);
   // slider has a range between 0 and 255 with a starting value of 127
   slider = createSlider(0, 90, 45);
   slider.position(10, 10);
@@ -30,8 +31,11 @@ function draw() {
   line(0,height/2,width,height/2);
   
   line(0,0,mouseX,mouseY);
-  text(mouseY, 50, 150);
-  text(mouseX, 50, 100);
+  //text(mouseY, 50, 150);
+  //text(mouseX, 50, 100);
+  
+  text(width, 50,150);
+  text(height, 50, 100);
   
   for (let i = 0; i < 20; i++) {
   stroke(250);
