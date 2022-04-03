@@ -7,7 +7,7 @@ Voici une liste de tous les tutoriels:
 
 - Février 2022 : [Tutoriel sur les atomes, niveau seconde](https://mallorydazza.github.io/Tutoriels/Tutoriel_Atomistique.html#1)
 
-- Marx 2022 : [Tutoriel d'optique sur les phénomènes de réfraction et réfléxion, niveau seconde](https://mallorydazza.github.io/Tutoriels/Tutoriel_RefractionReflexion.html#1)
+- Mars 2022 : [Tutoriel d'optique sur les phénomènes de réfraction et réfléxion, niveau seconde](https://mallorydazza.github.io/Tutoriels/Tutoriel_RefractionReflexion.html#1)
 
 Voici une liste de toutes les simulations: 
 
