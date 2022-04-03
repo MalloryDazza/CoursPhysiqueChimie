@@ -3,8 +3,8 @@ let slider2;
 
 let radius = 15;
 
-let cx = 430;
-let cy = 170;
+let cx;
+let cy;
 
 let slider1_x = 10;
 let slider2_x = 80;
@@ -25,19 +25,26 @@ window.onscroll = function() {
 
 function setup() {
   createCanvas(document.documentElement.clientWidth,document.documentElement.clientHeight)
+  cx = width/4;
+  cy = height/4;
 }
 
 function draw() {
+  
   const milieu1 = color(9,   12,  17,  255);
-  const milieu2 = color(19,  65,  69,  255);
+  const milieu2 = color(11,  39,  41,  255);
   const gray    = color(145, 143, 141, 255);
   
-  let refrCol = color(101, 26,  26,  255);
-  let refrCol2 = color(101, 26,  26,  200);
-  let inciCol = color(54,  95,  73,  255);
-  let inciCol2 = color(54,  95,  73,  200);
-  let reflCol = color(114,  60,  46,  255); 
-  let reflCol2 = color(114,  60,  46,  200);
+  let reflCol = color(54, 95,  73,  255);
+  let reflCol2 = color(54, 95,  73,  200);
+  
+  // let inciCol = color(54,  95,  73,  255);
+  // let inciCol2 = color(54,  95,  73,  200);
+  let inciCol = color(188,  165,  151,  255);
+  let inciCol2 = color(188,  165,  151,  150);
+  
+  let refrCol = color(121,  31,  31,  255); 
+  let refrCol2 = color(121,  31,  31,  200);
 
   let n1 = round(1 + slider1_x * 8 / width,2);
   let n2 = round(1 + slider2_x * 8 / width,2);
@@ -117,7 +124,7 @@ function draw() {
   let dx = width / 4.5;
   let y = height / 2.5 + height/1.8;
   let dy = height / 2.28;
-  let slope = 300;
+  let slope = height / 2.5;
   
   line(x-10, y, x + dx, y);
   line(x, y+10, x, y-dy);
@@ -141,7 +148,17 @@ function draw() {
   //noFill();
   fill(inciCol2);
   arc(width/2, height/2, width/13, width/13, -angle_i-HALF_PI , -HALF_PI);
-  text(round(angle_i * 180 / PI,1) , width/2 +150, height/2 + 150)
+  
+  strokeWeight(1);
+  text(round(angle_i * 180 / PI,1) , width/2 - height/11, height/2 - height/11 )
+  strokeWeight(1.5);
+  fill(refrCol);
+  stroke(refrCol);
+  text(round(angle_r * 180 / PI,1) , width/2 + height/11, height/2 + height/11 )
+  fill(reflCol);
+  stroke(reflCol);
+  text(round(angle_i * 180 / PI,1) , width/2 + height/11, height/2 - height/11 )
+  strokeWeight(2.5);
   
   stroke(reflCol);
   fill(reflCol2);
@@ -150,7 +167,6 @@ function draw() {
   
   stroke(refrCol);
   fill(refrCol2);
-  text(round(angle_r * 180 / PI,1) , width/2 +150, height/2 + 250)
   line(width/2, height/2, width/2 + length*sin(angle_r), height/2 + length*cos(angle_r));
   arc(width/2, height/2, width/13, width/13, HALF_PI-angle_r , HALF_PI);
   
