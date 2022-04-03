@@ -6,11 +6,11 @@ let radius = 15;
 let cx = 430;
 let cy = 170;
 
-let slider1_x = 40;
-let slider2_x = 40;
+let slider1_x = 10;
+let slider2_x = 80;
 
-let overlisder1 = false;
-let overlisder2 = false;
+let overslider1 = false;
+let overslider2 = false;
 
 let overBox = false;
 let locked = false;
@@ -25,15 +25,6 @@ window.onscroll = function() {
 
 function setup() {
   createCanvas(document.documentElement.clientWidth,document.documentElement.clientHeight)
-  //createCanvas(751, 422);
-  // slider has a range between 0 and 255 with a starting value of 127
-  slider1 = createSlider(1, 2, 1, 0.1);
-  slider1.position(10, 10);
-  slider1.style('width', '100px');
-  
-  slider2 = createSlider(1, 2, 1.5, 0.1);
-  slider2.position(10, 30);
-  slider2.style('width', '100px');
 }
 
 function draw() {
@@ -47,9 +38,9 @@ function draw() {
   let inciCol2 = color(54,  95,  73,  200);
   let reflCol = color(114,  60,  46,  255); 
   let reflCol2 = color(114,  60,  46,  200);
-  
-  let n1 = slider1.value();
-  let n2 = slider2.value();
+
+  let n1 = round(1 + slider1_x * 8 / width,2);
+  let n2 = round(1 + slider2_x * 8 / width,2);
   let angle_i = HALF_PI - atan( (height/2 - cy)/(width/2 - cx))
   let angle_r = asin( n1 * sin(angle_i) / n2)
   let length = sqrt( sq(width/2 - cx) + sq(height/2 - cy) )
@@ -66,30 +57,53 @@ function draw() {
   line(width/2, 2*i * (height/40), width/2, (2*i+1) * (height/40));
   }
   
+  fill(gray);
+  noStroke();
+  textSize(height/30);
+  textFont("Baskerville");
+  text("indice optique", width - width/6.4 , height/ 2 - 2*height/17);
+  text(n1, width - width/6 + width/20 , height/ 2 - height/70);
+  
+  text(n2, width - width/6 + width/20 , height/ 2 + height/27);
+  text("indice optique", width - width/6.4 , height/ 2 + 2*height/15);
+  
   // Slider milieu1
   stroke(gray)
   fill(milieu2)
   rect(width - width/6 , height/ 2 - 2*height/20, width/8, height/20  )
-  fill(gray)
-  rect(width - width/6 + slider1_x, height/ 2 - 2*height/20, width/160, height/20 )
   
-   // Test if the cursor is over the slider
+  fill(gray)
+  rect(width - width/6 + slider1_x, height/ 2 - 2*height/20, width/160, height/20 );
+  
+  // Test if the cursor is over the slider1
   if (
     mouseX > width - width/6 + slider1_x &&
-    mouseX < width - width/6 + slider1_x + width/160 && 
+    mouseX < width - width/6 + slider1_x + width/160 &&
     mouseY > height/ 2 - 2*height/20 &&
     mouseY < height/ 2 - height/20
     ) {
-      overlisder1 = true;
+      overslider1 = true;
     } else {
-      overlisder1 = false;
+      overslider1 = false;
     }
   
   // Slider milieu2
-  fill(milieu1)
-  rect(width - width/6 , height/ 2 + height/20, width/8, height/20  )
-  fill(gray)
-  rect(width - width/6 + 40, height/ 2 + height/20, width/160, height/20 )
+  fill(milieu1);
+  rect(width - width/6 , height/ 2 + height/20, width/8, height/20  );
+  fill(gray);
+  rect(width - width/6 + slider2_x, height/ 2 + height/20, width/160, height/20 );
+  
+  // Test if the cursor is over the slider2
+  if (
+    mouseX > width - width/6 + slider2_x &&
+    mouseX < width - width/6 + slider2_x + width/160 &&
+    mouseY > height/ 2 + height/20 &&
+    mouseY < height/ 2 + 2*height/20
+    ) {
+      overslider2 = true;
+    } else {
+      overslider2 = false;
+    }
   
    // Test if the cursor is over the box (rayon incident)
   if (sq(mouseX - cx) + sq(mouseY - cy) < sq(radius)) {
@@ -139,17 +153,25 @@ function draw() {
   text(round(angle_r * 180 / PI,1) , width/2 +150, height/2 + 250)
   line(width/2, height/2, width/2 + length*sin(angle_r), height/2 + length*cos(angle_r));
   arc(width/2, height/2, width/13, width/13, HALF_PI-angle_r , HALF_PI);
+  
 }
 
 function mousePressed() {
-  if (overlisder1) {
+  // Slider 1 
+  if (overslider1) {
     lockslider1 = true;
   } else {
     lockslider1 = false;
   }
   
-  slide1_xoff = mouseX - (width - width/6);
+  // Slider 2 
+  if (overslider2) {
+    lockslider2 = true;
+  } else {
+    lockslider2 = false;
+  }
   
+  // Incident box
   if (overBox) {
     locked = true;
   } else {
@@ -160,12 +182,19 @@ function mousePressed() {
 }
 
 function mouseDragged() {
-  let slider1_mx = constrain(mouseX, width - width/6, width - width/6 + width/8);
-  
-  if (loskslider1) {
-    slider1_x = slider1_mx - slide1_xoff
+  // Slider 1
+  slider1_mx = constrain(mouseX, width - width/6, width - width/6 + width/8 - width/160);
+  if (lockslider1) {
+    slider1_x = slider1_mx - (width - width/6)
   }
   
+  // Slider 2
+  slider2_mx = constrain(mouseX, width - width/6, width - width/6 + width/8 - width/160);
+  if (lockslider2) {
+    slider2_x = slider2_mx - (width - width/6)
+  }
+  
+  // Incident Box
   let mx = constrain(mouseX, 0, round(width/2) -1 );
   let my = constrain(mouseY, 0, round(height/2) - 1 );
   
