@@ -12,8 +12,14 @@ Voici une liste de toutes les simulations:
 
 - Mars 2022 : [Simulation de la réfraction et reflexion à l'interface entre deux milieux](https://mallorydazza.github.io/Tutoriels/p5test.html)
 
-Voici une liste des cours en format PDF 
+Voici une liste des cours en format PDF :
 
 - TSI-1 Chapitre 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/Tutoriels/blob/main/TSI-1%20Chapitre%200.pdf)
 
 - TSI-1 Chapitre 1 : [Propagation de signaux](https://github.com/MalloryDazza/Tutoriels/blob/main/TSI-1%20Chapitre%201.pdf)
+
+Voici une liste des TD en format PDF :
+
+- TSI-1 TD 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/TSI-1%20TD-0.pdf)
+
+- TSI-1 TD 1 : [Propagation de signaux](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/TSI-1%20TD-1.pdf)
