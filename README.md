@@ -16,7 +16,4 @@ Voici une liste des cours en format PDF
 
 - TSI-1 Chapitre 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/Tutoriels/blob/main/TSI-1%20Chapitre%200.pdf)
 
-- TSI-1 Chapitre 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/Tutoriels/TSI-1%20Chapitre%200.pdf)
-
-
-- TSI-1 Chapitre 1 : [Propagation de signaux]()
+- TSI-1 Chapitre 1 : [Propagation de signaux](https://github.com/MalloryDazza/Tutoriels/blob/main/TSI-1%20Chapitre%201.pdf)
