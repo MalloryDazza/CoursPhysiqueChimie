@@ -1,4 +1,4 @@
-# Tutoriels de Physique-Chimie
+# Cours de Physique-Chimie
 
 Vous trouverez sur ce [site](https://mallorydazza.github.io/Tutoriels/) les contenus pédagogiques (cours, tutoriels, TD, TP etc...) que j'ai créé pour mes cours de Physique-Chimie, dont voici le dépôt Github [mallorydazza.Tutoriels](https://github.com/MalloryDazza/Tutoriels/)
 
@@ -14,6 +14,9 @@ Voici une liste de toutes les simulations:
 
 Voici une liste des cours en format PDF 
 
-- TSI-1 Chapitre 0 : [Les indispensables de la physique-chimie]()
+- TSI-1 Chapitre 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/Tutoriels/blob/main/TSI-1%20Chapitre%200.pdf)
+
+- TSI-1 Chapitre 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/Tutoriels/TSI-1%20Chapitre%200.pdf)
+
 
 - TSI-1 Chapitre 1 : [Propagation de signaux]()
