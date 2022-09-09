@@ -18,8 +18,11 @@ Voici une liste des cours en format PDF :
 
 - TSI-1 Chapitre 1 : [Propagation de signaux](https://github.com/MalloryDazza/Tutoriels/blob/main/TSI-1%20Chapitre%201.pdf)
 
+- TSI-1 Chapitre 2 : [Interférences et Diffractions](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/2Chapitre_Interference_Diffraction.pdf)
+
 Voici une liste des TD en format PDF :
 
 - TSI-1 TD 0 : [Les indispensables de la physique-chimie](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/TSI-1%20TD-0.pdf)
 
 - TSI-1 TD 1 : [Propagation de signaux](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/TSI-1%20TD-1.pdf)
+
