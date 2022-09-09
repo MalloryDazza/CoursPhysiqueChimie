@@ -26,3 +26,4 @@ Voici une liste des TD en format PDF :
 
 - TSI-1 TD 1 : [Propagation de signaux](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/TSI-1%20TD-1.pdf)
 
+- TSI-1 TD 2 : [Interférences et diffractions](https://github.com/MalloryDazza/CoursPhysiqueChimie/blob/main/TSI-1%20TD-2.pdf)
